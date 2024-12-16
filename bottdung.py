@@ -364,28 +364,12 @@ async def off(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     help_text = """
-🌐 LỆNH HƯỚNG DẪN:
-Lệnh Người Dùng:
-/flood https://google.com - Tấn công flood (người dùng mua VIP có thể sử dụng 300 giây).
-
-/bypass https://google.com - Tấn công bypass (người dùng mua VIP có thể sử dụng 300 giây).
-
-/tlskill https://google.com - Tấn công tlskill trong 60 giây [FREE].
-
-/help - Hiển thị hướng dẫn lệnh.
-Lệnh ADMIN 👑:
-/vip @username - Thêm người dùng vào danh sách VIP (chỉ dành cho quản trị viên).
-/deletevip @username - Xóa người dùng khỏi danh sách VIP (chỉ dành cho quản trị viên).
-/stop - Dừng cuộc tấn công.
-/addgroup [group_id] - Thêm nhóm.
-/history - Xem lịch sử tấn công.
-/adduser [user_id] - Thêm quản trị viên.
-/deleteuser [user_id] - Xóa quản trị viên.
-/deletehistory - Xóa lịch sử tấn công.
-/on - Kích hoạt bot.
-/off - Vô hiệu hóa bot.
 [OWNERS @tdun2710]
-MUA KEY VIP LIÊN HỆ @tdun2710 👑]
+MUA KEY VIP Tuần/Tháng LIÊN HỆ @tdun2710 👑]
+🌐 LỆNH HƯỚNG DẪN:
+/flood https://google.com - Tấn công flood (người dùng mua VIP có thể sử dụng 300 giây).
+/bypass https://google.com - Tấn công bypass (người dùng mua VIP có thể sử dụng 300 giây).
+/tlskill https://google.com - Tấn công tlskill trong 60 giây [FREE].
     """
     
     await update.message.reply_text(help_text, parse_mode='Markdown')

